@@ -19,7 +19,6 @@ class FinalGrade {
     }
 
     public static int finalGrade(int grade, int projects) {
-        int full;
         if (grade > 90 || projects > 10) {
             return 100;
         }if (grade > 75 && projects >= 5) {
