@@ -5,15 +5,16 @@ public class Capitalization {
 
     public static String accum(String s) {
         String str = "";
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = 0; j < i + 1; j++) {
+        for (int index = 0; index < s.length(); index++) {
+            int totalCount = index + 1;
+            for (int j = 0; j < totalCount ; j++) {
                 if (j == 0) {
-                    str += Character.toString(s.charAt(i)).toUpperCase();
+                    str += Character.toString(s.charAt(index)).toUpperCase();
                 } else {
-                    str += Character.toString(s.charAt(i)).toLowerCase();
+                    str += Character.toString(s.charAt(index)).toLowerCase();
                 }
             }
-            if (i != s.length() - 1) {
+            if (index != s.length() - 1) {
                 str += "-";
             }
 
