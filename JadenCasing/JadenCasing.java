@@ -5,18 +5,21 @@ public class JadenCasing{
     }
 
     public static String toUpper(String str){
+        //split the string
         String[] words = str.split("\\s+");
-        int len = words.length;
+        int len = words[i].length();
         String newStr = "";
 
         for (int i = 0; i < len; i++) {
-            for(int j = 0; j < words[i].length(); j++){
+            for(int j = 0; j < words[i].len; j++){
+                //capitalize first words
                 if(j == 0){
                     newStr += Character.toString(words[i].charAt(j)).toUpperCase();
                 }else{
                     newStr += Character.toString(words[i].charAt(j)).toLowerCase();
                 }
-            }
+            } 
+            //join them with a space
             newStr +=" ";
         }
         return newStr;
