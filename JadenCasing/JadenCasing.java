@@ -20,7 +20,7 @@ public class JadenCasing{
                 }
             } 
             //join them with a space
-            newStr +=" ";
+            newStr+= " ";
         }
         return newStr;
     }
