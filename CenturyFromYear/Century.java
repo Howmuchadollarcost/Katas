@@ -7,8 +7,8 @@ class Century{
     }
 
     public static int centuryFromYear(int year){
+        
         return (year % 100) > 0 ? (year/100) + 1 : (year/100);
-
         //alternative
         // int cent = year / 100;    //first two numbers
         // int decade = year % 100; // Second two numbers

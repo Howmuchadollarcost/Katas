@@ -1,6 +1,9 @@
 public class Capitalization {
     public static void main(String[] args) {
         System.out.println(accum("abcd"));
+
+        //System.out.println(repeat("z", 0));
+
     }
 
     public static String accum(String s) {
@@ -18,6 +21,15 @@ public class Capitalization {
                 str += "-";
             }
 
+        }
+        return str;
+    }
+
+
+    public static String repeat(String s, int num) {
+        String str = "";
+        for (int i = 0; i < num; i++) {
+            str += s;
         }
         return str;
     }
