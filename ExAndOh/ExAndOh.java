@@ -33,7 +33,7 @@ class ExAndOh{
                 randomCounter++;
             }            
         }
-        return xCounter-oCounter == 0? true: false;
+        return xCounter == oCounter;
 
 
         // if(xCounter - oCounter == 0){
@@ -41,5 +41,7 @@ class ExAndOh{
         // }else{
         //     return false;
         // }
+
+        //return xCounter - oCounter == 0 ? true : false;
     }
 }
