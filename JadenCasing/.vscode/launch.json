@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JadenCasing",
+            "request": "launch",
+            "mainClass": "JadenCasing"
+        }
+    ]
+}
